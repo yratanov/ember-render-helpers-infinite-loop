@@ -1,0 +1,6 @@
+{{outlet}}
+
+<button {{on "click" (action (mut this.param) 'changed')}}>Toggle</button>
+
+{{did-update (perform this.someTask) this.param}}
+
